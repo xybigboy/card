@@ -1,0 +1,42 @@
+# Git
+.git
+.gitignore
+
+# Docker
+Dockerfile
+.dockerignore
+docker-compose.yml
+
+# Python
+__pycache__
+*.pyc
+*.pyo
+*.egg-info
+.venv
+venv
+env
+
+# Node.js
+node_modules
+frontend/dist
+
+# Backend local dev files - must NOT be copied into Docker image
+# static/ is built fresh from frontend in Docker build
+# data/ contains local dev database that should not be in the image
+backend/static
+backend/data
+
+# IDE
+.vscode
+.idea
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Scripts
+scripts/
